@@ -21,7 +21,7 @@
 <%= book_path('cz', 1) %>
 
 <%- begin -%>
-<%= book_path(1) %>
+<%= book_path(:id => 1) %>
 <%- rescue => e -%>
 <%= "Exception while calling 'book_path(1)': #{e.inspect}" %>
 <%- end -%>
